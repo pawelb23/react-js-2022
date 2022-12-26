@@ -1,0 +1,57 @@
+.font-size-welcome {
+    font-size: 35px;
+    font-weight: bold;
+    margin-bottom: 35px;
+}
+
+.green {
+    color: rgb(0, 153, 51);
+}
+
+.stateless-component {
+    color: rgb(255, 255, 255);
+}
+
+.state-component {
+    color: rgb(117, 117, 219);
+}
+
+.stateless-component-with-parameter {
+    color: rgb(102, 153, 0);
+}
+
+.state-component-with-parameter {
+    color: rgb(204, 0, 204);
+}
+
+.timer1,
+.timer2 {
+    color: rgb(80, 125, 95);
+}
+
+.avatar-size {
+    text-align: center;
+    border-radius: 25px;
+    border: 5px solid black;
+    height: 175px;
+    width: 175px;
+}
+
+.divFlex {
+    display: flex;
+    justify-content: center;
+}
+
+.warning {
+    width: 250px;
+    background-color: red;
+    border: 3px dotted black;
+}
+
+.hide {
+    background-color: rgb(166, 14, 37);
+}
+
+.show {
+    background-color: green;
+}

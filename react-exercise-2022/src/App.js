@@ -1,23 +1,55 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+
+//-----
+
+// const Button = (props) => {
+//   return (
+//     <button onClick={() => props.update(`New app name ${Date.now()}`)}>
+//       update
+//     </button>
+//   );
+// };
+
+//-----
+
+function FormattedDate(props) {
+  return <h2>Jest godzina: {props.date}</h2>;
+}
+
+class Clock extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = { date: "" };
+  }
+
+  componentDidMount() {
+    this.timerID = setInterval(() => this.tick(), 1000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.timerID);
+  }
+
+  tick() {
+    this.setState({ date: new Date().toLocaleTimeString() });
+  }
+
+  render() {
+    return (
+      <div>
+        <h1>Czas</h1>
+        <FormattedDate date={this.state.date} />
+      </div>
+    );
+  }
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Clock />
+      {/* <Button update={this.update.bind(this)} /> */}
     </div>
   );
 }
