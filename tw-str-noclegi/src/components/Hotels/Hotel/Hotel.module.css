@@ -1,0 +1,21 @@
+.hotel {
+  box-sizing: border-box;
+  margin: 0.5rem;
+  padding: 0.3rem;
+  color: rgb(9, 66, 65);
+  border: 0.1rem solid black;
+  background-color: rgb(95, 158, 160, 0.3);
+}
+
+.img {
+  margin: 0.5rem;
+}
+
+.opis {
+  font-weight: bold;
+}
+
+.pElementsStyling {
+  font-weight: bold;
+  font-size: 1.5rem;
+}

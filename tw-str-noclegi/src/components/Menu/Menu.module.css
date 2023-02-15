@@ -1,0 +1,25 @@
+.menuContainer {
+  /* margin: 1rem; */
+  padding: 1rem;
+}
+
+.menuBorder {
+  border: 0.1rem solid black;
+}
+
+.menu {
+  list-style-type: none;
+  text-align: left;
+  margin: 0;
+  padding: 0.5rem;
+}
+
+.menuItem {
+  display: inline-block;
+  margin: 0.5rem;
+  padding: 0.5rem;
+}
+
+.aElement {
+  text-decoration: none;
+}
