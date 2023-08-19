@@ -6,8 +6,8 @@ function Hotel() {
   return (
     <div className={`${styles.hotel} card`}>
       <div className="card-body"></div>
-      <div className="row m-1 mw-100">
-        <div className="col-4">
+      <div className="resize-screen-info m-1">
+        <div className="col-5 float-start">
           <img
             src={hotelImg1}
             alt=""
@@ -16,17 +16,17 @@ function Hotel() {
             // img-thumbnail - daje fajną białą ramkę wokół zdjęcia
           />
         </div>
-        <div className="col-8">
+        <div className="col-7 float-end">
           <div className="row h-100">
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div className="col-12 h-50 d-flex justify-content-center align-items-center">
-                <p className={`${styles.pElementsStyling}`}>Pensjonat</p>
+                <p className={styles.pElementsStyling}>Pensjonat</p>
               </div>
-              <div className="col-12 h-50 d-flex justify-content-center align-items-center h4 p-3">
+              <div className="col-12 h-50 d-flex justify-content-center align-items-center h3 p-3">
                 <span className="badge bg-light text-dark p-2">Warszawa</span>
               </div>
             </div>
-            <div className="col-6">
+            <div className="col-12 col-sm-6">
               <div className="col-12 h-50 d-flex justify-content-center align-items-center">
                 <p className={`${styles.pElementsStyling} badge bg-ligh`}>
                   Ocena: 10
@@ -59,7 +59,7 @@ function Hotel() {
           </div>
           <a
             href="#section"
-            className="btn btn-secondary border border-2 rounded float-end mt-3"
+            className={`${styles.btn} btn btn-secondary border border-2 rounded float-end mt-3 mb-4`}
           >
             Pokaż
           </a>

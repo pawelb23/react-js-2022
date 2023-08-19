@@ -1,0 +1,8 @@
+$bodyColor: rgb(231, 225, 225);
+
+body {
+  background-color: $bodyColor;
+}
+
+// UWAGA!!! W projektach React.js, opartych na modułach/komponentach zazwyczaj nie wykorzystuje się SCSS (SASS),
+// gdyż nie ma dużo klas i projekt nie jest tak duży

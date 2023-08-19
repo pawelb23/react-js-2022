@@ -48,8 +48,8 @@ const Post = (props) => {
   };
   const linkInfo = (event) => {
     event.preventDefault(); //sam element <button></button> nie potrzebuje event.preventDefault(),
-    //zaś element link <a href=""></a>, który wymaga tego
-    //eventu, aby strona nie przeładowywała się po kliknięciu w link niepotrzebnie
+    //zaś element link <a href=""></a>, wymaga tego eventu,
+    //aby strona nie przeładowywała się po kliknięciu w link niepotrzebnie
     console.log("klik");
   };
 
